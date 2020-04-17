@@ -16,6 +16,10 @@ Thanks for your support!
 
 This Joomla Plugin sets the lazyloading attribute to all images that passes the onContentPrepare Event to allow modern browsers to lazyload the images.
 
+More information about the `loading` attribute:
+Description: [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading).
+HTML Specification: [https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-loading](https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-loading).
+
 ## Configuration
 
 ### Initial setup the plugin
@@ -52,9 +56,10 @@ This plugin will be proposed as Plugin to the Joomla Core and will be part of th
 
 ## Special Thanks
 
-David Jardin - @snipersister - https://www.djumla.de/
+David Jardin - @snipersister
+Felix Arntz - @felixarntz - https://github.com/WordPress/wp-lazy-loading
 
-For giving me the inspiration for the plugin and the feedback on the actual implementation. Thanks :+1:
+For giving the inspiration for the plugin and the input and feedback on the actual implementation. Thanks :+1:
 
 ## Joomla! Extensions Directory (JED)
 
