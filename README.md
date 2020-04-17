@@ -63,8 +63,8 @@ This plugin can also been found in the Joomla! Extensions Directory: [ImageLazyl
 ## Release steps
 
 - `build/build.sh`
-- `git commit -am 'prepare release Lazyloading 1.0.x'`
-- `git tag -s '1.0.x' -m 'Lazyloading 1.0.x'`
+- `git commit -am 'prepare release ImageLazyloading 1.0.x'`
+- `git tag -s '1.0.x' -m 'ImageLazyloading 1.0.x'`
 - `git push origin --tags`
 - create the release on GitHub
 - `git push origin master`
