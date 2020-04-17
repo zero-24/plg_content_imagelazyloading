@@ -21,7 +21,7 @@ class PlgContentImageLazyloading extends CMSPlugin
 	 * Plugin that adds the lazyloading attribute on the fly
 	 *
 	 * @param   string   $context  The context of the content being passed to the plugin.
-	 * @param   object   &$row     The article object.  Note $article->text is also available
+	 * @param   object   &$row     The article object.
 	 * @param   mixed    &$params  The article params
 	 * @param   integer  $page     The 'page' number
 	 *
@@ -31,6 +31,23 @@ class PlgContentImageLazyloading extends CMSPlugin
 	 */
 	public function onContentPrepare($context, &$row, &$params, $page = 0)
 	{
-		// Code goes here
+		if (strpos($row->text, '<img') === false)
+		{
+			return;
+		}
+
+		if (!preg_match_all('/<img\s[^>]+>/', $row->text, $matches))
+		{
+			return;
+		}
+
+		foreach ($matches[0] as $image)
+		{
+			if (strpos($image, ' loading=') === false)
+			{
+				$lazyloadImage = str_replace('<img ', '<img loading="lazy" ', $image);
+				$row->text = str_replace($image, $lazyloadImage, $row->text);
+			}
+		}
 	}
 }
