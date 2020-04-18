@@ -58,7 +58,7 @@ This plugin will be proposed as Plugin to the Joomla Core and will be part of th
 
 ## Special Thanks
 
-David Jardin - @snipersister  
+David Jardin - @snipersister<br>
 Felix Arntz - @felixarntz - https://github.com/WordPress/wp-lazy-loading
 
 For giving the inspiration for the plugin and the input and feedback on the actual implementation. Thanks :+1:
