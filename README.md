@@ -54,7 +54,7 @@ You have found an Issue or have an question / suggestion regarding the plugin, o
 
 ## Beyond this repo
 
-This plugin will be proposed as Plugin to the Joomla Core and will be part of the upcomming 4.0 Release. Please note that the core the plugin will be renamed to `plg_content_imagelazyload` and Joomla 4.0 core will ship with this plugin enabled by default. This plugin here acts as a backport for Joomla 3.
+This plugin [has been proposed as plugin](https://github.com/joomla/joomla-cms/pull/28838) to the Joomla! Core and will be part of the upcomming 4.0 release. Please note that the core the plugin will be renamed to `plg_content_imagelazyload` and Joomla 4.0 core will ship with this plugin enabled by default. This plugin here acts as a backport for Joomla 3.
 
 ## Special Thanks
 
