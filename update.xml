@@ -1,18 +1,18 @@
 <?xml version="1.0" ?>
 <updates>
 	<update>
-		<name>ImageLazyloading 1.0.0</name>
+		<name>ImageLazyloading 1.0.1</name>
 		<description>ImageLazyloading Plugin</description>
 		<element>imagelazyloading</element>
 		<type>plugin</type>
 		<folder>content</folder>
 		<client>site</client>
-		<version>1.0.0</version>
+		<version>1.0.1</version>
 		<infourl title="ImageLazyloading Plugin">https://github.com/zero-24/plg_content_imagelazyloading</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_content_imagelazyloading/releases/download/1.0.0/plg_content_imagelazyloading.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_content_imagelazyloading/releases/download/1.0.1/plg_content_imagelazyloading.zip</downloadurl>
 		</downloads>
-		<sha512>110407f6f2dbb979fb2752df7b02e689d22c923dfb1b2a1c33b0fda0b46eafac79ec9d734d91e9ac05426de360e78bbbee17feac2bba41808b035ca9459ebdab</sha512>
+		<sha512>24309166fd78ce74bc489d0a485dc0dc2a40611e1af80d24b24c9b75985971896836016885cc1857a95446721092a276c4b9a5d829fa8a663a1bbf7a7e97b8b9</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
