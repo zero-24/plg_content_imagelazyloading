@@ -26,9 +26,9 @@ More information about the `loading` attribute:
 
 ### Initial setup the plugin
 
-- Download the latest version of the plugin: https://github.com/zero-24/plg_content_imagelazyloading/releases/latest
-- Install the plugin using Upload & Install
-- Enable the plugin from the plugin manager
+- [Download the latest version of the plugin](https://github.com/zero-24/plg_content_imagelazyloading/releases/latest)
+- Install the plugin using `Upload & Install`
+- Enable the plugin `Conent - ImageLazyloading` from the plugin manager
 
 Now the inital setup is completed and the plugin is running.
 
@@ -50,7 +50,7 @@ You want to translate this extension to your own language? Check out my [Crowdin
 
 ## Beyond this repo
 
-This plugin [has been proposed as plugin](https://github.com/joomla/joomla-cms/pull/28838) to the Joomla! Core and will be part of the upcomming 4.0 release. Please note that the core the plugin will be renamed to `plg_content_imagelazyload` and Joomla 4.0 core will ship with this plugin enabled by default. This plugin here acts as a backport for Joomla 3.
+This plugin is intended as backport for the lazyload features added in Joomla 4.0. 
 
 ## Special Thanks
 
