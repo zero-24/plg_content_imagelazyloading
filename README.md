@@ -50,7 +50,7 @@ You want to translate this extension to your own language? Check out my [Crowdin
 
 ## Beyond this repo
 
-This plugin is intended as backport for the lazyload features added in Joomla 4.0. 
+This plugin was intended as backport for the lazyload features added in Joomla 4.0 but where later replaced in the core by a more native integration. You can find more details on the differences at this magazine article: [Using native lazyloading on your website](https://magazine.joomla.org/all-issues/january-2021/using-native-lazyloading-on-your-website) 
 
 ## Special Thanks
 
