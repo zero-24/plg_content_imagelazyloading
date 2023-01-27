@@ -25,11 +25,11 @@ class PlgContentImageLazyloading extends CMSPlugin
 	 * @param   mixed    &$params  The article params
 	 * @param   integer  $page     The 'page' number
 	 *
-	 * @return  mixed  Always returns void or true
+	 * @return  mixed  Always returns void
 	 *
 	 * @since   1.0.0
 	 */
-	public function onContentPrepare($context, &$row, &$params, $page = 0)
+	public function onContentPrepare($context, &$row, &$params, $page = 0): void
 	{
 		if (strpos($row->text, '<img') === false)
 		{
