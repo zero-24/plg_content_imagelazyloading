@@ -29,7 +29,7 @@ class PlgContentImageLazyloading extends CMSPlugin
 	 *
 	 * @since   1.0.0
 	 */
-	public function onContentPrepare($context, &$row, &$params, $page = 0): void
+	public function onContentPrepare($context, &$row, &$params, $page = 0)
 	{
 		if (strpos($row->text, '<img') === false)
 		{
