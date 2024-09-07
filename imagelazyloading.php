@@ -31,24 +31,39 @@ class PlgContentImageLazyloading extends CMSPlugin
 	 */
 	public function onContentPrepare($context, &$row, &$params, $page = 0)
 	{
-		if (strpos($row->text, '<img') === false)
+		if (strpos($row->text, '<img') === false && strpos($row->text, '<iframe') === false)
 		{
 			return;
 		}
 
-		if (!preg_match_all('/<img\s[^>]+>/', $row->text, $matches))
-		{
-			return;
-		}
 
-		foreach ($matches[0] as $image)
+		if ($this->params->get('enabled_image', false) && preg_match_all('/<img\s[^>]+>/', $row->text, $imgMatches))
 		{
-			// Make sure we have a src but no loading attribute
-			if (strpos($image, ' src=') !== false && strpos($image, ' loading=') === false)
+			// Check and add the loading attribute for images
+			foreach ($imgMatches[0] as $image)
 			{
-				$lazyloadImage = str_replace('<img ', '<img loading="lazy" ', $image);
-				$row->text = str_replace($image, $lazyloadImage, $row->text);
+				// Make sure we have a src but no loading attribute
+				if (strpos($image, ' src=') !== false && strpos($image, ' loading=') === false)
+				{
+					$lazyloadImage = str_replace('<img ', '<img loading="lazy" ', $image);
+					$row->text = str_replace($image, $lazyloadImage, $row->text);
+				}
 			}
 		}
+
+		if ($this->params->get('enabled_iframe', false) && preg_match_all('/<iframe\s[^>]+>/', $row->text, $iframeMatches))
+		{
+			// Check and add the loading attribute for images
+			foreach ($iframeMatches[0] as $iframe)
+			{
+				// Make sure we have a src but no loading attribute
+				if (strpos($iframe, ' src=') !== false && strpos($iframe, ' loading=') === false)
+				{
+					$lazyloadIframe = str_replace('<iframe ', '<iframe loading="lazy" ', $iframe);
+					$row->text = str_replace($iframe, $lazyloadIframe, $row->text);
+				}
+			}
+		}
+
 	}
 }

@@ -16,4 +16,32 @@
 	<updateservers>
 		<server type="extension" name="ImageLazyloading Update Site">https://raw.githubusercontent.com/zero-24/plg_content_imagelazyloading/master/update.xml</server>
 	</updateservers>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="enabled_image"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="PLG_CONTENT_IMAGELAZYLOADING_SETTING_IMAGE"
+					default="1"
+					filter="integer"
+					>
+					<option value="0">JDISABLED</option>
+					<option value="1">JENABLED</option>
+				</field>
+				<field
+					name="enabled_iframe"
+					type="radio"
+					label="PLG_CONTENT_IMAGELAZYLOADING_SETTING_IFRAME"
+					layout="joomla.form.field.radio.switcher"
+					default="0"
+					filter="integer"
+					>
+					<option value="0">JDISABLED</option>
+					<option value="1">JENABLED</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
 </extension>
