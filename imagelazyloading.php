@@ -36,10 +36,9 @@ class PlgContentImageLazyloading extends CMSPlugin
 			return;
 		}
 
-
+		// Check and add the loading attribute for images
 		if ($this->params->get('enabled_image', false) && preg_match_all('/<img\s[^>]+>/', $row->text, $imgMatches))
 		{
-			// Check and add the loading attribute for images
 			foreach ($imgMatches[0] as $image)
 			{
 				// Make sure we have a src but no loading attribute
@@ -51,9 +50,9 @@ class PlgContentImageLazyloading extends CMSPlugin
 			}
 		}
 
+		// Check and add the loading attribute for iframes
 		if ($this->params->get('enabled_iframe', false) && preg_match_all('/<iframe\s[^>]+>/', $row->text, $iframeMatches))
 		{
-			// Check and add the loading attribute for images
 			foreach ($iframeMatches[0] as $iframe)
 			{
 				// Make sure we have a src but no loading attribute
