@@ -4,7 +4,7 @@ This Joomla Plugin sets the lazyloading attribute to images and iframes.
 
 ## Features
 
-This Joomla Plugin sets the lazyloading attribute to all images and iframes that passes the onContentPrepare Event to allow modern browsers to lazyload the images.
+This Joomla Plugin sets the lazyloading attribute to all images and iframes that passes the onContentPrepare Event to allow modern browsers to lazyload them.
 
 More information about the `loading` attribute:
 - Description: [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading).
