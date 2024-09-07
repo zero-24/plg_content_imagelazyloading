@@ -1,18 +1,18 @@
 <?xml version="1.0" ?>
 <updates>
 	<update>
-		<name>ImageLazyloading 1.0.2</name>
+		<name>ImageLazyloading 1.0.3</name>
 		<description>ImageLazyloading Plugin</description>
 		<element>imagelazyloading</element>
 		<type>plugin</type>
 		<folder>content</folder>
 		<client>site</client>
-		<version>1.0.2</version>
+		<version>1.0.3</version>
 		<infourl title="ImageLazyloading Plugin">https://github.com/zero-24/plg_content_imagelazyloading</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_content_imagelazyloading/releases/download/1.0.2/plg_content_imagelazyloading.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_content_imagelazyloading/releases/download/1.0.3/plg_content_imagelazyloading.zip</downloadurl>
 		</downloads>
-		<sha512>5a22b8cca6f45cc7a6bad25d25eb30c12418906402e79669bb152fd848d0cb9b8fde5d533a9187c5c8a68af837e27a1b4a4eb5257f0a3831f2781e1b11959509</sha512>
+		<sha512>458191234a4005dd84b660108e578cc0bf3574e854ae5167cd8b7fb50ef5d3c579361ce61f54d3bc7d9cb2528626f144d66d994dc591a3795452112e48ead42f</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
@@ -22,18 +22,18 @@
 		<targetplatform name="joomla" version="3.(9|10)"/>
 	</update>
 	<update>
-		<name>ImageLazyloading 1.0.2</name>
+		<name>ImageLazyloading 1.0.3</name>
 		<description>ImageLazyloading Plugin</description>
 		<element>imagelazyloading</element>
 		<type>plugin</type>
 		<folder>content</folder>
 		<client>site</client>
-		<version>1.0.2</version>
+		<version>1.0.3</version>
 		<infourl title="ImageLazyloading Plugin">https://github.com/zero-24/plg_content_imagelazyloading</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_content_imagelazyloading/releases/download/1.0.2/plg_content_imagelazyloading.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_content_imagelazyloading/releases/download/1.0.3/plg_content_imagelazyloading.zip</downloadurl>
 		</downloads>
-		<sha512>5a22b8cca6f45cc7a6bad25d25eb30c12418906402e79669bb152fd848d0cb9b8fde5d533a9187c5c8a68af837e27a1b4a4eb5257f0a3831f2781e1b11959509</sha512>
+		<sha512>458191234a4005dd84b660108e578cc0bf3574e854ae5167cd8b7fb50ef5d3c579361ce61f54d3bc7d9cb2528626f144d66d994dc591a3795452112e48ead42f</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
@@ -43,18 +43,18 @@
 		<targetplatform name="joomla" version="4.[01234]"/>
 	</update>
 	<update>
-		<name>ImageLazyloading 1.0.2</name>
+		<name>ImageLazyloading 1.0.3</name>
 		<description>ImageLazyloading Plugin</description>
 		<element>imagelazyloading</element>
 		<type>plugin</type>
 		<folder>content</folder>
 		<client>site</client>
-		<version>1.0.2</version>
+		<version>1.0.3</version>
 		<infourl title="ImageLazyloading Plugin">https://github.com/zero-24/plg_content_imagelazyloading</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_content_imagelazyloading/releases/download/1.0.2/plg_content_imagelazyloading.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_content_imagelazyloading/releases/download/1.0.3/plg_content_imagelazyloading.zip</downloadurl>
 		</downloads>
-		<sha512>5a22b8cca6f45cc7a6bad25d25eb30c12418906402e79669bb152fd848d0cb9b8fde5d533a9187c5c8a68af837e27a1b4a4eb5257f0a3831f2781e1b11959509</sha512>
+		<sha512>458191234a4005dd84b660108e578cc0bf3574e854ae5167cd8b7fb50ef5d3c579361ce61f54d3bc7d9cb2528626f144d66d994dc591a3795452112e48ead42f</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
