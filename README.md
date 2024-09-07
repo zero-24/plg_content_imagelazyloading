@@ -1,10 +1,10 @@
 # ImageLazyloading Plugin
 
-This Joomla Plugin sets the lazyloading attribute to images.
+This Joomla Plugin sets the lazyloading attribute to images and iframes.
 
 ## Features
 
-This Joomla Plugin sets the lazyloading attribute to all images that passes the onContentPrepare Event to allow modern browsers to lazyload the images.
+This Joomla Plugin sets the lazyloading attribute to all images and iframes that passes the onContentPrepare Event to allow modern browsers to lazyload the images.
 
 More information about the `loading` attribute:
 - Description: [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading).
@@ -19,6 +19,7 @@ More information about the `loading` attribute:
 - [Download the latest version of the plugin](https://github.com/zero-24/plg_content_imagelazyloading/releases/latest)
 - Install the plugin using `Upload & Install`
 - Enable the plugin `Conent - ImageLazyloading` from the plugin manager
+- (optional) Enable the option for iframes within the setting if desired
 
 Now the inital setup is completed and the plugin is running.
 
@@ -40,7 +41,7 @@ You want to translate this extension to your own language? Check out my [Crowdin
 
 ## Beyond this repo
 
-This plugin was intended as backport for the lazyload features added in Joomla 4.0 but where later replaced in the core by a more native integration. You can find more details on the differences at this magazine article: [Using native lazyloading on your website](https://magazine.joomla.org/all-issues/january-2021/using-native-lazyloading-on-your-website) 
+This plugin was intended as backport for the lazyload features added in Joomla 4.0 but where later replaced in the core by a more native integration. You can find more details on the differences at this magazine article: [Using native lazyloading on your website](https://magazine.joomla.org/all-issues/january-2021/using-native-lazyloading-on-your-website)
 
 ## Special Thanks
 
