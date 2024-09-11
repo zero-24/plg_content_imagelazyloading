@@ -37,7 +37,7 @@ class PlgContentImageLazyloading extends CMSPlugin
 		}
 
 		// Check and add the loading attribute for images
-		if ($this->params->get('enabled_image', false) && preg_match_all('/<img\s[^>]+>/', $row->text, $imgMatches))
+		if ($this->params->get('enabled_image', true) && preg_match_all('/<img\s[^>]+>/', $row->text, $imgMatches))
 		{
 			foreach ($imgMatches[0] as $image)
 			{
