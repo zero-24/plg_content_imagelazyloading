@@ -31,12 +31,16 @@ class PlgContentImageLazyloading extends CMSPlugin
 	 */
 	public function onContentPrepare($context, &$row, &$params, $page = 0)
 	{
-		if (strpos($row->text, '<img') === false && strpos($row->text, '<iframe') === false)
+		if (strpos($row->text, '<img') === false
+			&& strpos($row->text, '<iframe') === false
+			&& strpos($row->text, '<audio') === false
+			&& strpos($row->text, '<video') === false
+		)
 		{
 			return;
 		}
 
-		// Check and add the loading attribute for images
+		// Check and add the loading attribute for image tags
 		if ($this->params->get('enabled_image', true) && preg_match_all('/<img\s[^>]+>/', $row->text, $imgMatches))
 		{
 			foreach ($imgMatches[0] as $image)
@@ -50,7 +54,7 @@ class PlgContentImageLazyloading extends CMSPlugin
 			}
 		}
 
-		// Check and add the loading attribute for iframes
+		// Check and add the loading attribute for iframe tags
 		if ($this->params->get('enabled_iframe', false) && preg_match_all('/<iframe\s[^>]+>/', $row->text, $iframeMatches))
 		{
 			foreach ($iframeMatches[0] as $iframe)
@@ -60,6 +64,34 @@ class PlgContentImageLazyloading extends CMSPlugin
 				{
 					$lazyloadIframe = str_replace('<iframe ', '<iframe loading="lazy" ', $iframe);
 					$row->text = str_replace($iframe, $lazyloadIframe, $row->text);
+				}
+			}
+		}
+
+		// Check and add the loading attribute for video tags
+		if ($this->params->get('enabled_video', false) && preg_match_all('/<video\s[^>]+>/', $row->text, $videoMatches))
+		{
+			foreach ($videoMatches[0] as $video)
+			{
+				// Make sure we have a src but no loading attribute
+				if (strpos($video, ' src=') !== false && strpos($video, ' loading=') === false)
+				{
+					$lazyloadVideo = str_replace('<video ', '<video loading="lazy" ', $video);
+					$row->text = str_replace($video, $lazyloadVideo, $row->text);
+				}
+			}
+		}
+
+		// Check and add the loading attribute for audio tags
+		if ($this->params->get('enabled_audio', false) && preg_match_all('/<audio\s[^>]+>/', $row->text, $audioMatches))
+		{
+			foreach ($audioMatches[0] as $audio)
+			{
+				// Make sure we have a src but no loading attribute
+				if (strpos($audio, ' src=') !== false && strpos($audio, ' loading=') === false)
+				{
+					$lazyloadAudio = str_replace('<audio ', '<audio loading="lazy" ', $audio);
+					$row->text = str_replace($audio, $lazyloadAudio, $row->text);
 				}
 			}
 		}
